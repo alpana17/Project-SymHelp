@@ -1,7 +1,7 @@
 Ext.define('symhelp.view.More_details', {
     extend: 'Ext.Panel',
     xtype: 'More_details',
-    id : 'hello',
+    id : 'More_details',
     config: {
         layout: {
             type: 'vbox',
@@ -19,8 +19,8 @@ Ext.define('symhelp.view.More_details', {
         },
         {
                         xtype : 'button',
-                        id : 'logout',
-                        name : 'logout',
+                        id : 'logout_details',
+                        name : 'logout_details',
                         text : 'Logout',
                         left : '85%'
         },

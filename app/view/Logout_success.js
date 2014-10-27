@@ -1,33 +1,26 @@
-Ext.define('symhelp.view.Register', {
+Ext.define('symhelp.view.Logout_success', {
     extend: 'Ext.Panel',
-    xtype: 'Register',
-    id : 'Register',
+    id : 'Logout_success',
+    xtype: 'logout_success',
     config: {
+
         layout: {
             type: 'vbox',
             align: 'middle',
-            fullscreen : 'true'
+            fullscreen : 'true',
+            scrollable : 'true'
         },
-         
-                items: [
-                    {
+        //insert html
+        items: [
+            {
             xtype: 'titlebar',
             docked: 'top',
             width: '100%',
             id: 'searchTitle',
-            title: 'Registeration'
+            title: 'Logout Successful'
         },
-                {
-                    xtype : 'textfield',
-                    width : '60%',
-                    name : 'name',
-                    id : 'name1',
-                    label : 'Name',
-                    border : '1',
-                    style: 'border-color: black; border-style: solid;',
-                    required : true
-                    },
-                    {
+        //html : 'Logout successful.',
+            {
                     xtype : 'textfield',
                     width : '60%',
                     name : 'uname',
@@ -48,21 +41,19 @@ Ext.define('symhelp.view.Register', {
                     required : true
                     },
                     {
-                    xtype : 'passwordfield',
-                    width : '60%',
-                    name : 'cnfrmPswrd',
-                    id : 'cnfrmPswrd1',
-                    label : 'Confirm Password',
-                    border : '1',
-                    style: 'border-color: black; border-style: solid;',
-                    required : true
-                    },
-                    {
                         xtype : 'button',
-                        ui : 'round',
-                        //name : 'register',
+                        id : 'login_logout',
+                        name : 'login_logout',
+                        text : 'Login',
+                        ui : 'round'
+        },
+        //html : 'if not a registered user, go to register',
+        {
+                        xtype : 'button',
+                        id : 'registerMain_logout',
+                        name : 'registerMain_logout',
                         text : 'Register',
-                        id : 'register'
+                        ui : 'round'
         }
         ]
     }

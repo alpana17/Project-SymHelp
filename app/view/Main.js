@@ -1,5 +1,6 @@
 Ext.define('symhelp.view.Main', {
     extend: 'Ext.Panel',
+    id : 'Main',
     xtype: 'main',
     config: {
 
@@ -45,12 +46,12 @@ Ext.define('symhelp.view.Main', {
                         text : 'Login',
                         ui : 'round'
         },
-        //html here (if not a registered user, go to register)
+        //html : 'if not a registered user, go to register',
         {
                         xtype : 'button',
-                        id : 'register1',
-                        name : 'register1',
-                        text : 'Register1',
+                        id : 'registerMain',
+                        name : 'registerMain',
+                        text : 'Register',
                         ui : 'round'
         }
         ]

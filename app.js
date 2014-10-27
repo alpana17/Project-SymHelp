@@ -17,9 +17,19 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    views: [
-        'Main','Register','RegisterHere','Symptoms','More_details'
+    models: [
+        'sugList'
     ],
+
+    stores: [
+        'sugListStore'
+    ],
+
+    views: [
+        'Main','Register','RegisterHere','Symptoms','More_details','Logout_success', 'Dis_list'
+    ],
+
+    controllers : ['control'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
@@ -44,7 +54,7 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('symhelp.view.Register'));
+        Ext.Viewport.add(Ext.create('symhelp.view.Dis_list'));
     },
 
     onUpdated: function() {

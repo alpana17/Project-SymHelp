@@ -1,7 +1,7 @@
 Ext.define('symhelp.view.Symptoms', {
     extend: 'Ext.Panel',
     xtype: 'Symptoms',
-    id : 'hello',
+    id : 'Symptoms',
     config: {
         layout: {
             type: 'vbox',
@@ -25,8 +25,8 @@ Ext.define('symhelp.view.Symptoms', {
             items: [
                         {
                         xtype : 'button',
-                        id : 'logout',
-                        name : 'logout',
+                        id : 'logout_sym',
+                        name : 'logout_sym',
                         text : 'Logout',
                         ui : 'round',
                         left : '102%'
@@ -35,7 +35,8 @@ Ext.define('symhelp.view.Symptoms', {
                         xtype: 'selectfield',
                         label: 'Symptom 1',
                         options: [
-                            {text: 'Headache',  value: 'First'},
+                            {text: 'Null',  value: 'First'},
+                            {text: 'Headache',  value: 'Seventh'},
                             {text: 'Fever', value: 'Second'},
                             {text: 'Cough',  value: 'Third'},
                             {text: 'Body Pain',  value: 'Fourth'},
@@ -58,7 +59,8 @@ Ext.define('symhelp.view.Symptoms', {
                         xtype: 'selectfield',
                         label: 'Symptom 2',
                         options: [
-                            {text: 'Headache',  value: 'First'},
+                        {text: 'Null',  value: 'First'},
+                            {text: 'Headache',  value: 'Seventh'},
                             {text: 'Fever', value: 'Second'},
                             {text: 'Cough',  value: 'Third'},
                             {text: 'Body Pain',  value: 'Fourth'},
@@ -80,7 +82,8 @@ Ext.define('symhelp.view.Symptoms', {
                         xtype: 'selectfield',
                         label: 'Symptom 3',
                         options: [
-                            {text: 'Headache',  value: 'First'},
+                            {text: 'Null',  value: 'First'},
+                            {text: 'Headache',  value: 'Seventh'},
                             {text: 'Fever', value: 'Second'},
                             {text: 'Cough',  value: 'Third'},
                             {text: 'Body Pain',  value: 'Fourth'},
@@ -102,7 +105,8 @@ Ext.define('symhelp.view.Symptoms', {
                         xtype: 'selectfield',
                         label: 'Symptom 4',
                         options: [
-                            {text: 'Headache',  value: 'First'},
+                            {text: 'Null',  value: 'First'},
+                            {text: 'Headache',  value: 'Seventh'},
                             {text: 'Fever', value: 'Second'},
                             {text: 'Cough',  value: 'Third'},
                             {text: 'Body Pain',  value: 'Fourth'},
@@ -124,7 +128,8 @@ Ext.define('symhelp.view.Symptoms', {
                         xtype: 'selectfield',
                         label: 'Symptom 5',
                         options: [
-                            {text: 'Headache',  value: 'First'},
+                            {text: 'Null',  value: 'First'},
+                            {text: 'Headache',  value: 'Seventh'},
                             {text: 'Fever', value: 'Second'},
                             {text: 'Cough',  value: 'Third'},
                             {text: 'Body Pain',  value: 'Fourth'},
