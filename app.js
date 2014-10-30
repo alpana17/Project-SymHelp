@@ -26,7 +26,7 @@ Ext.application({
     ],
 
     views: [
-        'Main','Register','RegisterHere','Symptoms','More_details','Logout_success', 'Dis_list'
+        'Main','Register','RegisterHere','Symptoms','More_details','Logout_success', 'Dis_list','No_disease'
     ],
 
     controllers : ['control'],
@@ -54,7 +54,7 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('symhelp.view.Dis_list'));
+        Ext.Viewport.add(Ext.create('symhelp.view.Symptoms'));
     },
 
     onUpdated: function() {
