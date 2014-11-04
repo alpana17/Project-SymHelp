@@ -18,15 +18,15 @@ Ext.application({
     ],
 
     models: [
-        'sugList', 'disinfoList'
+        'sugList', 'disinfoList','symptoms'
     ],
 
     stores: [
-        'sugListStore','disinfoListStore'
+        'sugListStore','disinfoListStore','symptomsStore'
     ],
 
     views: [
-        'Main','Register','RegisterHere','Symptoms','More_details','Logout_success', 'Dis_list','Dis_info' 
+        'Symptoms', 'Dis_list','Dis_info','No_symptom' 
     ],
 
     controllers : ['control'],
@@ -50,13 +50,24 @@ Ext.application({
     },
 
     launch: function() {
-        // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
 
         if(!Ext.getStore('disinfoListStore'))
         {
             Ext.create('symhelp.store.disinfoListStore',{
                 storeId: 'disinfoListStore'
+            })
+        }
+        if(!Ext.getStore('sugListStore'))
+        {
+            Ext.create('symhelp.store.sugListStore',{
+                storeId: 'sugListStore'
+            })
+        }
+        if(!Ext.getStore('Dis_list'))
+        {
+            Ext.create('symhelp.view.Dis_list',{
+                ViewId: 'Dis_list'
              
             })
   

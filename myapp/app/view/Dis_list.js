@@ -8,45 +8,26 @@ Ext.define('symhelp.view.Dis_list',{
             align: 'top'
         },
         items : [
-       /* {
-        	xtype: 'titlebar',
-            docked: 'top',
-            width: '100%',
-            id: 'DisTitle',
-            title: 'List of Diseases'
-        },*/
         {
         xtype: 'toolbar',
         docked: 'top',
         title: 'List of Diseases',
         items: [
-        {    xtype : 'button',
-              id   : 'back_list',
-              ui : 'back',
-              text : 'Back',
-             align: 'right'
-        },
-        ] 
-        },
-        /*{
-            xtype : 'button',
-            id    : 'back_list',
-            ui   : 'round',
+        {   xtype : 'button',
+            id   : 'back_list',
+            ui : 'back',
             text : 'Back',
-            align : 'left', 
-            margin : '10 10 10 1230',
-            hidden: true
-        },*/
+            align: 'right'
+        },] 
+        },
         {
-
-                xtype: 'list',
-                width: '60%',
-                height: '100%',
-                centered : 'true',
-                id: 'ds_list', 
-                store: 'sugListStore',
-                itemTpl: '{d_name}',
-             }
-        ]
+            xtype: 'list',
+            width: '60%',
+            height: '100%',
+            centered : 'true',
+            id: 'disease_list', 
+            store: 'sugListStore',
+            itemTpl: ['<div>{d_name}','<div style="float:right";>{percentage}%</div></div>'],
+        }]
     }
 });

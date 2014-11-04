@@ -1,7 +1,7 @@
-Ext.define('symhelp.view.Dis_info',{
+Ext.define('symhelp.view.No_symptom',{
 	extend: 'Ext.Panel',
-    xtype: 'Dis_info',
-    id: 'Dis_info',
+    xtype: 'No_symptom',
+    id: 'No_symptom',
     config : {
     	layout: {
             type: 'vbox',
@@ -11,10 +11,10 @@ Ext.define('symhelp.view.Dis_info',{
         {
         xtype: 'toolbar',
         docked: 'top',
-        title: 'Disease Information',
+        title: 'List of Diseases',
         items: [
             {xtype : 'button',
-             id   : 'back_info',
+             id   : 'back_symptom',
              ui : 'back',
              text : 'Back',
              align: 'right'
@@ -23,8 +23,8 @@ Ext.define('symhelp.view.Dis_info',{
             width: '95%',
             height: '30%',
                 padding: '20 10 10 30',
-                id: 'info',
-                html : 'hello'
+                id: 'info1',
+                html : 'No Symptom is selected.'
              }
         ]
     }
